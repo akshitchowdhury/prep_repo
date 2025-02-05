@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../Reduc/authSlice';
 
 const Profile = () => {
-    const { user, token } = useSelector(state => state.auth);
+    const { user, token } = useSelector (state => state.auth);
     const dispatch = useDispatch();
 
     if (!user) return <p>Please log in.</p>;
